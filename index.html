@@ -86,7 +86,20 @@ div.tooltip {
 <div id="g1" class="tabcontent">
 
  <svg id="svg1" style="background-color: white;">
-   
+   <defs>
+        <marker id="arrow"
+                markerUnits="strokeWidth"
+                markerWidth="12"
+                markerHeight="12"
+                viewBox="0 0 12 12"
+                refX="6"
+                refY="6"
+                orient="auto">
+            <path d="M2,2 L10,6 L2,10 L6,6 L2,2" style="fill: #000000;" />
+        </marker>
+    </defs>
+
+    <line x1="500" y1="30" x2="550" y2="80"  stroke="red" stroke-width="2" marker-end="url(#arrow)"/>
 </svg>
 
 <h2 style="color:red">Top: $32</h2>
@@ -185,7 +198,7 @@ Only the bravest traders ran business on bitcoins. Because of that, its price fl
   <svg id="svg2" style="background-color: white;">
 </svg>
 <h2 style="color:red">Top: $260</h2>
-<p>From 2012 to 2013, the price of bitcoin steadily went upward. A lot of new investors joined in and media started to pat attention on bitcoins.
+<p>From 2012 to 2013, the price of bitcoin steadily went upward. A lot of new investors joined in and media started to pay attention on bitcoins.
 In 2013.4, it once rose up to $260, but soon fell down about 80% because of the outage of Mt.Gox.</p>
 
 <script>
