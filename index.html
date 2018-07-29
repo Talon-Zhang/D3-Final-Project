@@ -80,7 +80,7 @@ div.tooltip {
 </div>
 
 <div id="g1" class="tabcontent">
-  <<svg id="svg1" style="background-color: white;">
+  <svg id="svg1" style="background-color: white;">
    
 </svg>
 
@@ -202,7 +202,7 @@ div.tooltip {
   // append the svg obgect to the body of the page
   // appends a 'group' element to 'svg'
   // moves the 'group' element to the top left margin
-  var svg = d3.select("#svg2")
+  var svgb = d3.select("#svg2")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -224,13 +224,13 @@ div.tooltip {
     y.domain([0, d3.max(data, function(d) { return d.close; })]);
 
     // add the valueline path.
-    svg.append("path")
+    svgb.append("path")
       .data([data])
       .attr("class", "line")
       .attr("d", valueline);
 
     // add the dots with tooltips
-    svg.selectAll("dot")
+    svgb.selectAll("dot")
       .data(data)
       .enter().append("circle")
       .attr("r", 5)
@@ -251,12 +251,12 @@ div.tooltip {
       });
 
     // add the X Axis
-    svg.append("g")
+    svgb.append("g")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x));
 
     // add the Y Axis
-    svg.append("g")
+    svgb.append("g")
       .call(d3.axisLeft(y));
 
   });
