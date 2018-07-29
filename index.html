@@ -67,7 +67,7 @@ div.tooltip {
 </head>
 
 <body>
-
+console.log("a")
 <button class="tablink" onclick="openPage('Home', this, '#38A0DA')"id="defaultOpen">Home</button>
 <button class="tablink" onclick="openPage('g1', this, '#38A0DA')" >2011.6</button>
 <button class="tablink" onclick="openPage('g2', this, '#38A0DA')">2013.4</button>
@@ -310,6 +310,20 @@ In 2013.4, it once rose up to $260, but soon fell down about 80% because of the 
 <p>In 2013, the biggest and most typical collapse happened in bitcoin history. At the end of the year, the crazy bull market came easily with tons of investors coming in, 
 which was followed by a 87% drawdown and a relatively steady period of 400 days.
 </p>
+<defs>
+        <marker id="arrow"
+                markerUnits="strokeWidth"
+                markerWidth="12"
+                markerHeight="12"
+                viewBox="0 0 12 12"
+                refX="6"
+                refY="6"
+                orient="auto">
+            <path d="M2,2 L10,6 L2,10 L6,6 L2,2" style="fill: #000000;" />
+        </marker>
+    </defs>
+
+    <line x1="600" y1="30" x2="650" y2="80"  stroke="red" stroke-width="2" marker-end="url(#arrow)"/>
 <script>
   // set the dimensions and margins of the graph
   var margin = {top: 100, right: 50, bottom: 50, left: 50},
@@ -405,6 +419,20 @@ which was followed by a 87% drawdown and a relatively steady period of 400 days.
 <h2 style="color:red">Top: $20000</h2>
 <p>It is the highest price in the bitcoin history ever, with the inevitable drawdown.
 </p>
+<defs>
+        <marker id="arrow"
+                markerUnits="strokeWidth"
+                markerWidth="12"
+                markerHeight="12"
+                viewBox="0 0 12 12"
+                refX="6"
+                refY="6"
+                orient="auto">
+            <path d="M2,2 L10,6 L2,10 L6,6 L2,2" style="fill: #000000;" />
+        </marker>
+    </defs>
+
+    <line x1="200" y1="30" x2="250" y2="80"  stroke="red" stroke-width="2" marker-end="url(#arrow)"/>
 <script>
   // set the dimensions and margins of the graph
   var margin = {top: 100, right: 50, bottom: 50, left: 50},
