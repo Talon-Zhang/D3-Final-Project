@@ -80,7 +80,7 @@ div.tooltip {
 </div>
 
 <div id="g1" class="tabcontent">
-  <<svg style="background-color: white;">
+  <<svg id="svg1" style="background-color: white;">
     <defs>
         <marker id="arrow"
                 markerUnits="strokeWidth"
@@ -123,7 +123,7 @@ div.tooltip {
   // append the svg obgect to the body of the page
   // appends a 'group' element to 'svg'
   // moves the 'group' element to the top left margin
-  var svg = d3.select("svg")
+  var svg = d3.select("#svg1")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -186,7 +186,7 @@ div.tooltip {
 </div>
 
 <div id="g2" class="tabcontent">
-  <svg style="background-color: white;">
+  <svg id="svg2" style="background-color: white;">
     <defs>
         <marker id="arrow"
                 markerUnits="strokeWidth"
@@ -229,7 +229,7 @@ div.tooltip {
   // append the svg obgect to the body of the page
   // appends a 'group' element to 'svg'
   // moves the 'group' element to the top left margin
-  var svg = d3.select("svg")
+  var svg = d3.select("#svg2")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
